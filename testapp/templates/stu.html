@@ -1,0 +1,7 @@
+
+<form action="{% url 'test:pay' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="amount">
+    <input type="submit" value="支付" class="open_btn">
+</form>
+
